@@ -1,0 +1,24 @@
+
+#  translator-comments
+#. extracted-comments
+#: reference...
+#, flag...
+#| msgid previous-untranslated-string
+msgid "key1"
+msgstr "value1"
+
+
+#  translator-comments
+#. extracted-comments
+#: reference...
+#, flag...
+#| msgid previous-untranslated-string
+msgid ""
+"key2"
+msgstr ""
+"value2"
+
+msgid "key3\n"
+"with some other stuff"
+msgstr "value3\n"
+"with some different stuff"
