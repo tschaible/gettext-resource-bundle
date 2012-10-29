@@ -1,0 +1,2 @@
+msgid "locale"
+msgstr "en_US"
