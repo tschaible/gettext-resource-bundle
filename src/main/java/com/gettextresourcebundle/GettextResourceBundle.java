@@ -2,7 +2,7 @@
  * Copyright (c) 2012 Tom Schaible
  * See the file license.txt for copying permission.
  */
-package com.tomschaible.gettext;
+package com.gettextresourcebundle;
 
 
 import java.io.File;

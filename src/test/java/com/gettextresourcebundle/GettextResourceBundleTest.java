@@ -2,13 +2,15 @@
  * Copyright (c) 2012 Tom Schaible
  * See the file license.txt for copying permission.
  */
-package com.tomschaible.gettext;
+package com.gettextresourcebundle;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
+
+import com.gettextresourcebundle.GettextResourceBundle;
 
 /**
  * @author Tom Schaible

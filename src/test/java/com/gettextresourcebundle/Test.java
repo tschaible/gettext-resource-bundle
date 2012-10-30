@@ -1,7 +1,9 @@
-package com.tomschaible.gettext;
+package com.gettextresourcebundle;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
+
+import com.gettextresourcebundle.GettextResourceBundleControl;
 
 public class Test {
 
