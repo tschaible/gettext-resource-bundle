@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gettext-resource-bundle</groupId>
 	<artifactId>gettext-resource-bundle</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>gettext-resource-bundle</name>
 	<description>A Java ResourceBundle for gettext PO files</description>
 	<url>https://github.com/tschaible/gettext-resource-bundle</url>
