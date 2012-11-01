@@ -125,7 +125,7 @@ public class GettextResourceBundleControl extends Control {
 	protected String toPoResourceName(String bundleName, String format){
 		if (bundleName == null || format == null )
               throw new NullPointerException();
-		return bundleName+"/"+this.domain+".po";
+		return bundleName+"/LC_MESSAGES/"+this.domain+".po";
 	}
 	
 	protected String toPoBundleName(String baseName, Locale locale){
