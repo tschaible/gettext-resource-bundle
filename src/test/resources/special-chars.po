@@ -1,0 +1,17 @@
+
+#  translator-comments
+#. extracted-comments
+#: reference...
+#, flag...
+#| msgid previous-untranslated-string
+msgid "allspecialchars"
+msgstr "\t\b\n\r\f\'\"\\"
+
+msgid "escapedspecialchars"
+msgstr "\\t\\b\\n\\r\\f\\'\\\""
+
+msgid "escapedunicode"
+msgstr "\u03C0"
+
+msgid "escapedoctal"
+msgstr "\141\102\143\136"
