@@ -5,7 +5,7 @@
 #, flag...
 #| msgid previous-untranslated-string
 msgid "allspecialchars"
-msgstr "\t\b\n\r\f\'\"\\"
+msgstr "\t\b\n\r\f\'\"\\	"
 
 msgid "escapedspecialchars"
 msgstr "\\t\\b\\n\\r\\f\\'\\\""

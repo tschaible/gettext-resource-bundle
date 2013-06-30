@@ -1,0 +1,13 @@
+
+#  translator-comments
+#. extracted-comments
+#: reference...
+#, flag...
+#| msgid previous-untranslated-string
+msgid "MessageFormat"
+msgstr "successful replacement [{0}] [{1,number,#.##}]"
+
+msgid "Formatter"
+msgstr "successful replacement [%1$s] [%2$.2f]"
+
+

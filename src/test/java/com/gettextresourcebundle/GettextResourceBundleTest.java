@@ -8,6 +8,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.text.MessageFormat;
+import java.util.Formatter;
+
 import org.junit.Test;
 
 import com.gettextresourcebundle.GettextResourceBundle;
@@ -40,15 +43,32 @@ public class GettextResourceBundleTest {
 		
 	}
 	
+	/**
+	 * test to ensure special characters and escaping are parsed correctly
+	 */
 	@Test
 	public void testSpecialCharactersPOFile()
 	{
 		GettextResourceBundle rb = new GettextResourceBundle(Thread.currentThread().getContextClassLoader().getResourceAsStream("special-chars.po"));
 		
-		assertEquals("Testing escaped characters are properly parsed", rb.getString("allspecialchars"),"\t\b\n\r\f\'\"\\");
+		assertEquals("Testing escaped characters are properly parsed", rb.getString("allspecialchars"),"\t\b\n\r\f\'\"\\\t");
 		assertEquals("Testing escaping of escaped characters are properly parsed", rb.getString("escapedspecialchars"),"\\t\\b\\n\\r\\f\\'\\\"");
 		assertEquals("Testing escaped unicode characters are properly parsed", rb.getString("escapedunicode"),"π");
 		assertEquals("Testing escaped octal characters are properly parsed", rb.getString("escapedoctal"),"aBc^");
+
+	}
+	
+	/**
+	 * test that messages for 
+	 * MessageFormatter and Formatter can be parsed and used correctly
+	 */
+	@Test
+	public void testReplacementsPOFile()
+	{
+		GettextResourceBundle rb = new GettextResourceBundle(Thread.currentThread().getContextClassLoader().getResourceAsStream("replacements.po"));		
+		assertEquals("Testing MessageFormat", MessageFormat.format(rb.getString("MessageFormat"), "replace", Math.PI),"successful replacement [replace] [3.14]");
+		assertEquals("Testing Formatter", String.format(rb.getString("Formatter"), "replace", Math.PI),"successful replacement [replace] [3.14]");
+		
 
 	}
 }
