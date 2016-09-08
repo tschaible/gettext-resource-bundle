@@ -161,7 +161,7 @@ public class GettextResourceBundleControl extends Control {
         	}
         }
 		
-		return needsReload = true;
+		return needsReload;
 	}
 	
 	
